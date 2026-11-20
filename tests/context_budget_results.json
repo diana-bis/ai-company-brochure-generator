@@ -1,0 +1,35 @@
+{
+    "test_type": "context_budget_and_source_filtering",
+    "status": "PASS",
+    "original_text_length": 12000,
+    "context_length": 500,
+    "character_budget": 500,
+    "included_sources": [
+        "T1"
+    ],
+    "truncated_sources": [
+        {
+            "source_id": "T1",
+            "original_characters": 12000,
+            "included_characters": 426,
+            "reason": "Complete context budget allocation"
+        }
+    ],
+    "omitted_sources": [
+        {
+            "source_id": "T2",
+            "reason": "Source status: empty"
+        },
+        {
+            "source_id": "T3",
+            "reason": "Source status: failed"
+        }
+    ],
+    "checks": {
+        "within_budget": true,
+        "valid_source_included": true,
+        "oversized_source_truncated": true,
+        "invalid_sources_excluded": true,
+        "source_metadata_preserved": true
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "output_name": "AMD",
+    "text_budget": 12000,
+    "characters_used": 7882,
+    "included_sources": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+    ],
+    "truncated_sources": [],
+    "omitted_sources": []
+}

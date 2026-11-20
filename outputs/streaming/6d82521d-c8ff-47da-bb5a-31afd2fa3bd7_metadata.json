@@ -1,0 +1,12 @@
+{
+    "run_id": "6d82521d-c8ff-47da-bb5a-31afd2fa3bd7",
+    "company": "NVIDIA",
+    "audience": "customers",
+    "model": "gemini-3.1-flash-lite",
+    "timestamp": "2026-11-19T17:41:27.415954+00:00",
+    "duration_seconds": 9.29,
+    "status": "completed",
+    "output_path": "outputs/streaming/NVIDIA_customers_6d82521d-c8ff-47da-bb5a-31afd2fa3bd7.md",
+    "characters": 2082,
+    "error": null
+}

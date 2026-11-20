@@ -1,0 +1,11 @@
+{
+    "run_id": "5b975e63-c1a4-480d-9a6f-653e477c4b21",
+    "company_url": "https://example.com/",
+    "model": "gemini-3.1-flash-lite",
+    "system_prompt": "\nYou are selecting relevant pages from a company's website.\n\nYour goal is to identify pages that provide useful information\nfor two audiences:\n1. Potential customers.\n2. Potential job candidates.\n\nSelection rules:\n- Select up to 3 additional pages.\n- Select only URLs from the provided candidate list.\n- Do not select the homepage.\n- Do not select privacy policies or terms of service.\n- Do not select email links or external websites.\n- Prefer pages about products, services, company information,\n  technology, careers, teams, and company culture.\n- Choose pages that provide useful information for one or\n  both target audiences.\n- Prefer diversity of information. Avoid selecting multiple pages\n  that substantially cover the same subject.\n\nFor every selected page, provide:\n- type: A short description of the page category.\n- url: The complete selected URL.\n- reason: A clear explanation of why the page is relevant\n  to potential customers and/or job candidates.\n\nThe reason must explain the actual value of the page,\nnot simply repeat its title.\n\nReturn ONLY a JSON object using this structure:\n\n{\n    \"links\": [\n        {\n            \"type\": \"products\",\n            \"url\": \"https://company.example/products\",\n            \"reason\": \"Explains the company's products and helps potential customers understand its solutions.\"\n        }\n    ]\n}\n\nAll three fields must be non-empty strings.\n\nIf no suitable pages exist, return:\n{\n    \"links\": []\n}\n",
+    "user_prompt": "\nHere are the candidate links collected from the company website:\nhttps://example.com/\n\nSelect relevant pages for potential customers and job candidates.\n\nUse only the following normalized candidate URLs:\n\nhttps://example.com/about\nhttps://example.com/careers",
+    "candidate_links": [
+        "https://example.com/about",
+        "https://example.com/careers"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "test_type": "validation_before_fetch_simulation",
+    "total_tests": 4,
+    "passed": 4,
+    "results": [
+        {
+            "test": "Malformed JSON",
+            "status": "PASS",
+            "reason": "Malformed JSON: Expecting value: line 1 column 12 (char 11)",
+            "fetch_calls": 0
+        },
+        {
+            "test": "URL outside candidate list",
+            "status": "PASS",
+            "reason": "URL not in candidate list: https://www.nvidia.com/not-in-candidates/",
+            "fetch_calls": 0
+        },
+        {
+            "test": "Duplicate URLs",
+            "status": "PASS",
+            "reason": "Duplicate URL: https://www.nvidia.com/en-eu/about-nvidia/",
+            "fetch_calls": 0
+        },
+        {
+            "test": "Forbidden URL mixed with valid URLs",
+            "status": "PASS",
+            "reason": "Forbidden page selected: https://www.nvidia.com/en-eu/privacy/",
+            "fetch_calls": 0
+        }
+    ]
+}

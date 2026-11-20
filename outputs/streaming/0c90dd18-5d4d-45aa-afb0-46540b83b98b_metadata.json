@@ -1,0 +1,12 @@
+{
+    "run_id": "0c90dd18-5d4d-45aa-afb0-46540b83b98b",
+    "company": "TEST",
+    "audience": "customers",
+    "model": "gemini-3.1-flash-lite",
+    "timestamp": "2026-11-20T10:08:32.329881+00:00",
+    "duration_seconds": 3.56,
+    "status": "completed",
+    "output_path": "outputs/streaming/TEST_customers_0c90dd18-5d4d-45aa-afb0-46540b83b98b.md",
+    "characters": 1421,
+    "error": null
+}

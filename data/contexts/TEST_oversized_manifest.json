@@ -1,0 +1,26 @@
+{
+    "output_name": "TEST_oversized",
+    "text_budget": 500,
+    "characters_used": 500,
+    "included_sources": [
+        "T1"
+    ],
+    "truncated_sources": [
+        {
+            "source_id": "T1",
+            "original_characters": 12000,
+            "included_characters": 426,
+            "reason": "Complete context budget allocation"
+        }
+    ],
+    "omitted_sources": [
+        {
+            "source_id": "T2",
+            "reason": "Source status: empty"
+        },
+        {
+            "source_id": "T3",
+            "reason": "Source status: failed"
+        }
+    ]
+}

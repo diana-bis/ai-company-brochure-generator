@@ -1,0 +1,33 @@
+{
+    "test_type": "streaming_simulation_and_interruption",
+    "status": "PASS",
+    "api_calls": 0,
+    "tests": {
+        "normal_stream": {
+            "expected_status": "completed",
+            "expected_text": "Hello world!",
+            "output_path": "tests\\streaming_simulated_output.txt"
+        },
+        "interrupted_stream": {
+            "expected_status": "partial",
+            "expected_text": "This is an interrupted ",
+            "output_path": "tests\\streaming_interrupted_output.txt"
+        },
+        "full_workflow_mock": {
+            "run_id": "7e6da9a2-383a-4288-af90-acdeead82896",
+            "status": "partial",
+            "output_path": "outputs/streaming/TEST_customers_7e6da9a2-383a-4288-af90-acdeead82896.md",
+            "metadata_path": "outputs\\streaming\\7e6da9a2-383a-4288-af90-acdeead82896_metadata.json",
+            "error": "Simulated connection failure"
+        }
+    },
+    "checks": {
+        "completed_text_exact": true,
+        "interrupted_text_exact": true,
+        "workflow_text_exact": true,
+        "interruption_marked_partial": true,
+        "interruption_error_recorded": true,
+        "character_count_correct": true,
+        "no_none_in_outputs": true
+    }
+}

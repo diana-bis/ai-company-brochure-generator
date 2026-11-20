@@ -1,0 +1,12 @@
+{
+    "run_id": "7e6da9a2-383a-4288-af90-acdeead82896",
+    "company": "TEST",
+    "audience": "customers",
+    "model": "gemini-3.1-flash-lite",
+    "timestamp": "2026-11-20T10:11:37.903883+00:00",
+    "duration_seconds": 0.02,
+    "status": "partial",
+    "output_path": "outputs/streaming/TEST_customers_7e6da9a2-383a-4288-af90-acdeead82896.md",
+    "characters": 23,
+    "error": "Simulated connection failure"
+}

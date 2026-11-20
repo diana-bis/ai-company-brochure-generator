@@ -1,0 +1,14 @@
+{
+    "run_id": "7d0dccf3-b4bc-4d25-9dc0-60d4011aee43",
+    "action": "company_comparison",
+    "companies": [
+        "NVIDIA",
+        "AMD"
+    ],
+    "model": "gemini-3.1-flash-lite",
+    "timestamp": "2026-11-19T17:09:03.392785+00:00",
+    "duration_seconds": 8.04,
+    "status": "success",
+    "prompt_path": "data/prompts/comparison_7d0dccf3-b4bc-4d25-9dc0-60d4011aee43.txt",
+    "output_path": "outputs/comparisons/NVIDIA_AMD_7d0dccf3-b4bc-4d25-9dc0-60d4011aee43.md"
+}

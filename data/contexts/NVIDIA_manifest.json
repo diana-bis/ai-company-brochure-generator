@@ -1,0 +1,13 @@
+{
+    "output_name": "NVIDIA",
+    "text_budget": 12000,
+    "characters_used": 7801,
+    "included_sources": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+    ],
+    "truncated_sources": [],
+    "omitted_sources": []
+}

@@ -1,0 +1,19 @@
+{
+    "links": [
+        {
+            "type": "careers",
+            "url": "https://www.amd.com/en/corporate/careers.html",
+            "reason": "This is the primary destination for potential job candidates to explore career opportunities, learn about company culture, and find information on working at AMD."
+        },
+        {
+            "type": "products",
+            "url": "https://www.amd.com/en/products/processors/server/epyc.html",
+            "reason": "Provides essential technical and performance information about server processors, which is highly relevant for business customers and decision-makers evaluating infrastructure solutions."
+        },
+        {
+            "type": "corporate information",
+            "url": "https://www.amd.com/en/corporate.html",
+            "reason": "Offers an overview of the company's mission, history, and strategic direction, helping both customers and candidates understand the organization's values and professional environment."
+        }
+    ]
+}

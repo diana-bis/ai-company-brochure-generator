@@ -1,0 +1,1 @@
+{"links": [{"type": "about", "url": "https://example.com/about", "reason": "Company information"}, {"type": "careers", "url": "https://example.com/careers", "reason": "Job opportunities"}]}

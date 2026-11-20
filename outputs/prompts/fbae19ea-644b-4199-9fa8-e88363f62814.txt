@@ -1,0 +1,175 @@
+
+You are writing a company brochure in Hebrew.
+
+COMPANY:
+Edward Donner
+
+TARGET AUDIENCE:
+customers
+
+INSTRUCTIONS:
+
+        Write for potential customers.
+
+        Focus on:
+        - The problem the company aims to solve.
+        - Its products and services.
+        - Practical use cases.
+        - Target audiences.
+        - What potential customers should clarify before contacting the company.
+        
+
+GENERAL REQUIREMENTS:
+
+1. Write between 200 and 300 words.
+   Count the words using Python's split() method.
+   The source list at the end is excluded from the count.
+
+2. Use clear Markdown headings and an organized structure.
+
+3. Support every substantial factual claim with a source
+   reference in this format: [A1], [A2], etc.
+
+4. Only reference source IDs included in the supplied context.
+
+5. Do not invent customers, prices, job openings,
+   employment conditions or company promises.
+
+6. Attribute marketing claims to the company that published them.
+
+7. If important information is unavailable, write:
+   "לא נמצא במקורות שנמסרו למודל".
+
+8. Keep company facts consistent across audiences.
+   Adapt the structure and emphasis to the reader,
+   not the underlying facts.
+
+9. Finish with a section titled "מקורות" containing
+   the source IDs and URLs used.
+
+SOURCE MATERIAL:
+----------------
+## Source A1
+Title: Home - Edward Donner
+URL: https://edwarddonner.com
+Content:
+Skip to content
+Avatar
+Curriculum
+Proficiency
+C4
+Outsmart
+An arena that pits LLMs against each other in a battle of diplomacy and deviousness
+About
+Posts
+Well, hi there.
+I’m Ed. I like writing code and experimenting with LLMs, and hopefully you’re here because you do too. I also enjoy amateur electronic music production (
+very
+amateur) and losing myself in
+Hacker News
+, nodding my head sagely to things I only half understand.
+I’m the co-founder and CTO of AI startup
+Nebula.io
+. I was previously founder and CEO of AI startup untapt,
+acquired in 2021
+, and a Managing Director at JPMorgan.
+I will happily drone on for hours about LLMs to anyone in my vicinity. My friends got fed up with my impromptu lectures, and convinced me to make some Udemy courses. To my total joy (and shock) they’ve become best-selling, top-rated courses, with over a million enrollments across 194 countries. The
+full curriculum is here
+. If you’re visiting from one of my courses – I’m super grateful!
+For more on me and my courses, please
+chat with me and my Digital Avatar here
+.
+November 11, 2026
+AI SDLC: The AI-Native Software Engineer in the Agentic Era
+October 14, 2026
+AI FDE: The Forward Deployed Engineer & Agentic AI Architect
+February 17, 2026
+AI Coder: Vibe Coder to Agentic Engineer – RESOURCES
+January 4, 2026
+AI Builder with n8n – Create Agents and Voice Agents – RESOURCES
+Navigation
+Avatar
+Curriculum
+Proficiency
+C4
+Outsmart
+An arena that pits LLMs against each other in a battle of diplomacy and deviousness
+About
+Posts
+Get in touch
+ed [at] edwarddonner [dot] com
+www.edwarddonner.com
+Follow me
+LinkedIn
+Twitter
+Facebook
+
+## Source A2
+Title: About - Edward Donner
+URL: https://edwarddonner.com/about-me-and-about-nebula/
+Content:
+Avatar
+Curriculum
+Proficiency
+C4
+Outsmart
+An arena that pits LLMs against each other in a battle of diplomacy and deviousness
+About
+Posts
+About
+I’m the co-founder and CTO of
+Nebula.io
+. We help recruiters source, understand, engage and manage talent, using Generative AI and other forms of machine learning. Our
+patented
+model matches people with roles with greater accuracy and speed than previously imaginable — no keywords required. Take a look for yourself; it’s completely free to try.
+Our long term goal is to help people discover their potential and pursue their reason for being, motivated by a concept called
+Ikigai
+. We help people find roles where they will be most fulfilled and successful; as a result, we will raise the level of human prosperity. It sounds grandiose, but since 77% of people don’t consider themselves
+inspired or engaged
+at work, it’s completely within our reach.
+I sometimes have to pinch myself. I’m incredibly lucky to be working in the field of AI at a time when it’s rewriting the boundaries of human and tech possibilities. I’m personally most drawn to applying AI to real world problems, and the specific problem of hiring has plagued me throughout my career. So I’m in the business of finding people their dream jobs — and conveniently, I’m in my dream job myself.
+AI Speaker
+I have a bad habit of lecturing all my friends on everything that astonishes me about LLMs and Agents. They convinced me to
+make Udemy courses
+, probably so I’d leave them alone. Somehow there are now more than a million enrollments on the courses. It’s been the greatest joy!
+I also run Live Events for O’Reilly and Pearson which are super fun. It’s the closest thing a nerd like me will get to being a Twitch star! And, Jon Krohn and I gave a talk on Agents at ODSC in Boston that’s been viewed 230k times. I love making these and I’m so grateful that people watch them.
+Before Nebula.io
+You can trace the roots of Nebula.io to an AI startup I founded in 2013
+
+## Source A4
+Title: The Directory of Proficient AI Engineers - Edward Donner
+URL: https://edwarddonner.com/proficient/
+Content:
+Avatar
+Curriculum
+Proficiency
+C4
+Outsmart
+An arena that pits LLMs against each other in a battle of diplomacy and deviousness
+About
+Posts
+The Directory of Proficient AI Engineers
+I’m delighted to offer this resource to highlight those who have completed
+my full AI curriculum
+covering AI Building, AI Engineering and AI Leadership. It’s an opt-in, no-cost listing of course graduates with a customized completion certificate.
+And there’s a twist..
+The Directory lists your Digital Twin! Future clients and employers can chat with your Twin to experience your skills first hand and book time with you.
+To be included, just
+fill in this form
+with your certificates and Digital Twin URL on Vercel, AWS, GCP or Azure. I’m also requesting a link to a post on LinkedIn where you’ve showcased a Udemy certificate, so I can confirm your identity.
+The Proficient AI Engineer Directory is at:
+https://proficientaiengineer.com
+To enter the directory, please use
+this form
+My full AI curriculum is here
+To get your Udemy certificate links, please
+see these instructions
+Any problems, please
+email me
+and I’ll sort it fast
+Is completing the full curriculum a strict requirement?
+A few people have asked to be included after finishing a subset of the courses. For now, I’d like to reserve this list for those who’ve completed the full curriculum, to make it most impactful. Everyone will have accomplished the same milestone in their learning journey. It makes being on the list most meaningful, both for you, and for your potential clients or employers. In the future, I might add lists for those at different stages of the journey, but I’m starting with this one to recognize the full achievement. I hope that makes sense..
+And the full Proficient AI Engineer Directory is here:
+----------------
+
+Write the complete brochure in Hebrew.

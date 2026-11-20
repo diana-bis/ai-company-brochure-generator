@@ -1,0 +1,55 @@
+
+You are writing a company brochure in Hebrew.
+
+COMPANY:
+TEST
+
+TARGET AUDIENCE:
+customers
+
+INSTRUCTIONS:
+
+        Write for potential customers.
+
+        Focus on:
+        - The problem the company aims to solve.
+        - Its products and services.
+        - Practical use cases.
+        - Target audiences.
+        - What potential customers should clarify before contacting the company.
+        
+
+GENERAL REQUIREMENTS:
+
+1. Write between 200 and 300 words.
+   Count the words using Python's split() method.
+   The source list at the end is excluded from the count.
+
+2. Use clear Markdown headings and an organized structure.
+
+3. Support every substantial factual claim with a source
+   reference in this format: [A1], [A2], etc.
+
+4. Only reference source IDs included in the supplied context.
+
+5. Do not invent customers, prices, job openings,
+   employment conditions or company promises.
+
+6. Attribute marketing claims to the company that published them.
+
+7. If important information is unavailable, write:
+   "לא נמצא במקורות שנמסרו למודל".
+
+8. Keep company facts consistent across audiences.
+   Adapt the structure and emphasis to the reader,
+   not the underlying facts.
+
+9. Finish with a section titled "מקורות" containing
+   the source IDs and URLs used.
+
+SOURCE MATERIAL:
+----------------
+Simulated company information
+----------------
+
+Write the complete brochure in Hebrew.

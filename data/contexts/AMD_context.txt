@@ -1,0 +1,155 @@
+## Source B1
+Title: AMD ׀ together we advance_AI
+URL: https://www.amd.com/en.html
+Content:
+Skip to main content
+AMD Website Accessibility Statement
+Your Trusted Partner for Advancing AI
+Your Trusted Partner for
+Advancing AI
+Confidently build your AI business outcomes
+Explore AI Solutions
+AMD Completes Acquisition of Taalas to Advance AI Inference Innovation
+Acquisition of specialized AI inference silicon pioneer strengthens the AMD full-stack AI portfolio and long-term inference roadmap.
+Read News Release
+AMD Completes Acquisition of World Labs
+The acquisition brings together leading AI model researchers and AMD engineers to shape the next generation of AMD hardware, software and systems for the open AI ecosystem.
+Read News Release
+AMD Showcases 6th Gen AMD EPYC Processors
+AMD announces the general availability of the 6th Gen AMD EPYC server SP7 processors, based on the new “Zen 6” architecture.
+Read News Release
+AI Solutions
+Why AMD
+AI is reshaping every business function. AMD helps you move from ambition to outcomes with a trusted, open, and flexible compute foundation.
+Broadest Portfolio of AI Solutions
+AMD is the only AI partner offering CPU, GPU, and adaptive computing solutions, enabling optimized AI deployments tailored to your needs.
+Open Ecosystem Approach
+A commitment to open standards and co-innovation fosters flexibility and investment protection, giving you the confidence to deploy AI end-to-end.
+Proven Leadership in Innovation
+AMD delivers industry-leading TCO, efficiency, and advanced AI capabilities, providing enterprise performance, reliability, and scalability for the data center, edge, and end user.
+Explore AI Solutions
+The Most Trusted Companies Trust AMD
+Leading Businesses Trust AMD
+To help solve the world’s most important challenges, AMD technologies partners with the world’s most trusted companies.
+See How
+AI Portfolio
+A Comprehensive AI Portfolio
+End-to-end AI solutions across the data center, edge, and endpoints
+Data Center AI
+Accelerate AI deployment on-prem and in the cloud with AMD GPUs, CPUs, and
+
+## Source B2
+Title: AMD Careers | Engineering and AI Jobs in Technology
+URL: https://www.amd.com/en/corporate/careers.html
+Content:
+Skip to main content
+AMD Website Accessibility Statement
+AMD Careers
+Join us. Together, we’ll advance your career – and the world.
+View All Jobs
+Advance your career. Advance the world.
+Accomplish the most meaningful work of your career and change lives for the better with the company leading technology and AI advancement.
+Note:
+Our recruiters never use personal emails, ask for fees, make offers via text, charge for resume reviews, or request personal ID documents during the application process. Learn how to protect yourself from job scams and report suspicious activity
+here
+.
+Career Areas
+Whether you’re designing next-gen processors, enabling AI breakthroughs, or creating go-to-market plans, every role at AMD contributes to something bigger — technology that moves the world forward. Search our open roles and discover where you’ll make your mark.
+Search Jobs from Greater China
+Engineering
+Search Jobs from Greater China
+Marketing & Sales
+Search Jobs from Greater China
+Corporate Functions
+Student Programs
+Explore internship, co-op, and early career opportunities
+Start Your Career at the Center of AI Innovation
+Our student programs put you at the epicenter of the AI ecosystem, where you’ll work alongside experts and industry pioneers. You'll do important work, learn new skills, and build your career — with support from AMD.
+Explore Student Programs
+Life at AMD
+Together we advance
+is more than a tagline, it’s who we are at our core. At AMD, you’re a valued member of a community that cares, connects, and succeeds — together.
+Benefits
+Belonging and Inclusion
+Community Impact
+Corporate Responsibility
+Benefits That Help You Thrive
+At AMD, your wellbeing drives our shared success. When you join our team, you’ll enjoy flexible work options, comprehensive benefits, family care programs, learning opportunities, and wellness support to help you thrive — at work and beyond.
+Explore Benefits
+Inclusive. Intentional. Impactful.
+We’
+
+## Source B3
+Title: AMD EPYC™ Server CPUs
+URL: https://www.amd.com/en/products/processors/server/epyc.html
+Content:
+Skip to main content
+AMD Website Accessibility Statement
+AMD EPYC™ Server CPUs
+Advanced data centers, hyperscale clouds, and supercomputers around the world run on AMD EPYC™ Server CPUs.
+New AMD EPYC 9006 Series Server CPUs
+Find the Right AMD EPYC Server CPU
+Breakthrough designs manufactured in the world’s most advanced fabs deliver the x86 performance, energy efficiency, and cost efficiency required for today’s AI-driven, data center demands. Choose from high-density CPUs for AI, high-frequency CPUs for low-latency workloads, and memory-optimized CPUs for database and simulation workloads.
+Data Center / Cloud / AI
+Exceptional performance for demanding enterprise, AI, and cloud workloads.
+Learn More
+Network / Edge
+Energy-efficient CPUs for space and power-constrained deployments.
+Learn More
+Small Business / Hosted Service Providers
+Designed for small business and hosted service providers, with up to 16 “Zen 5” cores for small servers.
+Learn More
+All EPYC Server CPU Specs
+Compare AMD EPYC Server CPUs, sort by features, and access complete details for every SKU.
+See All EPYC Server CPU Specs
+Tools to Help You Choose the Right AMD EPYC Server CPU
+Compare AMD EPYC Server CPUs and Intel Xeon CPUs, calculate potential greenhouse gas emissions, and estimate total cost of ownership.
+Visit AMD EPYC Processor Tools
+Built-in Features and Technologies
+Optimize your data center foundation with AMD EPYC Server CPUs, featuring advanced architecture and built-in AMD technologies that help deliver high memory bandwidth, robust security capabilities, and power-efficient performance.
+Explore Features and Technologies
+The Competition Can’t Touch AMD EPYC Server CPU Performance
+Shrink
+Data centers
+Up To
+8x
+more than Intel® Xeon®
+A single AMD EPYC™ 9005 CPU-based server can do the work of more than eight 2019-era Intel® Xeon® Platinum servers.
+1
+AMD EPYC Server CPUs Outperform Intel® Xeon® Processors
+From data center consolidation to raw integer performance, 5th Ge
+
+## Source B4
+Title: About AMD
+URL: https://www.amd.com/en/corporate.html
+Content:
+Skip to main content
+AMD Website Accessibility Statement
+About AMD
+Our Company
+AMD is the high performance and adaptive computing leader, powering the products and services that help solve the world’s most important challenges. Our technologies advance the future of the data center, embedded, gaming and PC markets.
+Founded in 1969 as a Silicon Valley start-up, the AMD journey began with dozens of employees who were passionate about creating leading-edge semiconductor products. AMD has grown into a global company setting the standard for modern computing, with many important industry firsts and major technological achievements along the way.
+Our Vision
+High performance and adaptive computing is transforming our lives.
+Our Mission
+Build great products that accelerate next-generation computing experiences.
+To achieve real progress, it takes ground-breaking innovation and human ingenuity working together to create something exceptional.
+Learn More
+Advancing Corporate Responsibility­
+Corporate responsibility is integral to how we operate as a global business, valued partner and trusted employer. From advancing high-performance and energy-efficient computing to cultivating an innovative, inclusive workforce, we are committed to driving the computing industry forward responsibly.
+Learn More
+Building AMD and the Culture with Progressive Leadership
+Our executive team continues to build a culture of execution excellence and inclusiveness of diverse perspectives while pushing the limits of innovation.
+Meet the Team
+Research
+AMD Research is the leading industry research lab where great ideas and innovation are transforming the future.
+Learn More
+Innovation
+AMD is driving innovation in high performance and adaptive computing technologies.
+Learn More
+Quality
+The AMD Quality Policy is a declaration of our commitment to uphold our products to the highest standards.
+Learn More
+AMD CAREERS
+Advance your career, and the world.
+Every role at AMD contributes to something bigge

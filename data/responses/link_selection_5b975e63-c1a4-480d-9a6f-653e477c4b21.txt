@@ -1,0 +1,1 @@
+{"links": [{"type": "about", "url": "https://example.com/about", "reason": "Company information"}, {"type": "other", "url": "https://unknown-site.com/page", "reason": "Unapproved external URL"}]}
