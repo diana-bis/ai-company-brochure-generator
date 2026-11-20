@@ -65,7 +65,10 @@ def generate_brochure_stream(
     company_name,
     context,
     audience,
-    on_update=None
+    on_update=None,
+    *,
+    company_id=None,
+    context_paths=(),
 ):
     """
     Generate a brochure using streaming.
@@ -151,7 +154,7 @@ def generate_brochure_stream(
         output_dir.mkdir(parents=True, exist_ok=True)
 
         output_path = output_dir / (
-            f"{company_name}_{audience}_{run_id}.md"
+            f"{company_id or company_name}_{audience}_{run_id}.md"
         )
         output_path.write_text(brochure, encoding="utf-8")
 
@@ -183,11 +186,11 @@ def generate_brochure_stream(
             model=MODEL,
             duration_seconds=duration,
             status=status,
-            input_paths=(
-                [str(prompt_path)]
-                if prompt_path is not None and prompt_path.is_file()
-                else []
-            ),
+            input_paths=[
+                str(path)
+                for path in (prompt_path, *context_paths)
+                if path is not None and path.is_file()
+            ],
             output_paths=[
                 str(output_path),
                 str(metadata_path),

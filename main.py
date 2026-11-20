@@ -8,17 +8,21 @@ Main entry point for the NVIDIA vs AMD assignment.
 Execution modes:
     inspect - Inspect saved sources, contexts and outputs.
     verify  - Validate existing assignment deliverables.
+    brochures - Regenerate the four brochures from saved sources.
     full    - Execute the complete live workflow.
 
 Default mode: inspect
 
-Only full mode makes Gemini API calls or website requests.
+Full and brochures modes call Gemini. Only full mode makes website requests.
 """
 
 import argparse
 import json
+import os
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
+from uuid import uuid4
 
 from assignment1_brochures.config import PROJECT_ROOT
 from assignment1_brochures.link_selection import select_relevant_links
@@ -182,20 +186,27 @@ def validate_brochure(text, source_ids):
             f"{BROCHURE_MIN_WORDS}-{BROCHURE_MAX_WORDS}"
         )
 
-    # Check for source ID references.
-    cited_ids = [
+    source_id_pattern = r"\b[A-Z][0-9]+\b"
+    cited_ids = {
         source_id
-        for source_id in source_ids
-        if re.search(
-            rf"(?<![A-Za-z0-9]){re.escape(source_id)}(?![A-Za-z0-9])",
-            body,
-        )
-    ]
+        for bracket in re.findall(r"\[([^\[\]\n]+)\]", text)
+        for source_id in re.findall(source_id_pattern, bracket)
+    }
+    body_has_citation = any(
+        re.search(source_id_pattern, bracket)
+        for bracket in re.findall(r"\[([^\[\]\n]+)\]", body)
+    )
+    unknown_ids = cited_ids.difference(source_ids)
 
-    if cited_ids:
+    if unknown_ids:
         messages.append(
-            "PASS: Source IDs cited in body: "
-            + ", ".join(cited_ids)
+            "FAIL: Source IDs absent from context: "
+            + ", ".join(sorted(unknown_ids))
+        )
+    elif body_has_citation:
+        messages.append(
+            "PASS: Cited source IDs belong to the context: "
+            + ", ".join(sorted(cited_ids))
         )
     else:
         messages.append(
@@ -357,11 +368,6 @@ def verify_saved_workflow():
                 and str(source.get("text", "")).strip()
             ]
 
-            source_ids_by_company[company_id] = [
-                str(source["source_id"])
-                for source in valid_sources
-            ]
-
             if len(valid_sources) == 4:
                 print(
                     f"PASS: {company['name']} has "
@@ -414,16 +420,18 @@ def verify_saved_workflow():
             + ".json"
         )
 
-        if manifest_path.is_file():
+        try:
+            included_ids = json.loads(read_text(manifest_path))["included_sources"]
+            if key != "comparison":
+                source_ids_by_company[key] = included_ids
             print(f"PASS: {manifest_path.name}")
-        else:
-            message = (
-                f"Missing context manifest: {manifest_path.name}"
-            )
+        except (OSError, ValueError, KeyError) as error:
+            message = f"Unable to read {manifest_path.name}: {error}"
             failures.append(message)
             print("FAIL:", message)
 
     # 3. Four brochures
+    print("\nChecking historical citations against saved context manifests.")
     for (company_id, audience), pattern in BROCHURE_PATTERNS.items():
         company_name = COMPANIES[company_id]["name"]
 
@@ -448,7 +456,7 @@ def verify_saved_workflow():
 
         passed, messages = validate_brochure(
             brochure,
-            source_ids_by_company[company_id],
+            source_ids_by_company.get(company_id, []),
         )
 
         for message in messages:
@@ -530,60 +538,17 @@ def verify_saved_workflow():
     return True
 
 
-def run_full_workflow():
-    """
-    Execute the complete live assignment workflow.
-
-    WARNING:
-    - Makes website requests.
-    - Makes Gemini API calls.
-    - Generates new outputs.
-    - May replace existing saved source/context files.
-
-    Use only when full regeneration is intended.
-    """
-    company_contexts = {}
-    all_sources = []
-
-    print("\n=== FULL WORKFLOW ===")
-
-    # Step 1-3: Research and evidence collection
-    for company_id, company in COMPANIES.items():
-        print(f"\n=== Processing {company['name']} ===")
-
-        selected = select_relevant_links(company["url"])
-
-        sources = fetch_company_sources(
-            company_id,
-            company["url"],
-            selected,
-        )
-
-        context, manifest = build_context(
-            sources,
-            output_name=company["name"],
-        )
-
-        company_contexts[company_id] = context
-        all_sources.extend(sources)
-
-        included = manifest.get("included_sources", [])
-
-        print(
-            f"Prepared {company['name']}: "
-            f"{len(included)} included sources"
-        )
-
-    # Step 4: Four brochures, exactly one streamed
-    for company_id, company in COMPANIES.items():
+def generate_company_brochures(companies, company_contexts, company_manifests):
+    """Generate and validate two brochures per company, streaming one."""
+    for company_id, company in companies.items():
         context = company_contexts[company_id]
 
-        valid_ids = [
-            source["source_id"]
-            for source in all_sources
-            if source.get("company_id") == company_id
-            and source.get("status") == "ok"
-        ]
+        valid_ids = company_manifests[company_id]["included_sources"]
+        context_dir = Path("data/contexts")
+        context_paths = (
+            context_dir / f"{company_id}_context.txt",
+            context_dir / f"{company_id}_manifest.json",
+        )
 
         for audience in ("customers", "candidates"):
             print(
@@ -592,11 +557,22 @@ def run_full_workflow():
             )
 
             if company_id == "A" and audience == "customers":
+                displayed_characters = 0
+
+                def display_update(accumulated_text):
+                    nonlocal displayed_characters
+                    print(accumulated_text[displayed_characters:], end="", flush=True)
+                    displayed_characters = len(accumulated_text)
+
                 brochure, status = generate_brochure_stream(
                     company["name"],
                     context,
                     audience,
+                    on_update=display_update,
+                    company_id=company_id,
+                    context_paths=context_paths,
                 )
+                print()
 
                 if status != "completed":
                     raise RuntimeError(
@@ -610,6 +586,7 @@ def run_full_workflow():
                     context,
                     audience,
                     company_id=company_id,
+                    context_paths=context_paths,
                 )
 
             passed, messages = validate_brochure(
@@ -626,14 +603,65 @@ def run_full_workflow():
                     f"{company['name']} {audience}"
                 )
 
+
+def run_full_workflow(companies):
+    """
+    Execute the complete live assignment workflow.
+
+    WARNING:
+    - Makes website requests.
+    - Makes Gemini API calls.
+    - Generates new outputs.
+    - May replace existing saved source/context files.
+
+    Use only when full regeneration is intended.
+    """
+    company_contexts = {}
+    company_manifests = {}
+    all_sources = []
+
+    print("\n=== FULL WORKFLOW ===")
+
+    # Step 1-3: Research and evidence collection
+    for company_id, company in companies.items():
+        print(f"\n=== Processing {company['name']} ===")
+
+        selected = select_relevant_links(company["url"])
+
+        sources = fetch_company_sources(
+            company_id,
+            company["url"],
+            selected,
+        )
+
+        context, manifest = build_context(
+            sources,
+            output_name=company_id,
+        )
+
+        company_contexts[company_id] = context
+        company_manifests[company_id] = manifest
+        all_sources.extend(sources)
+
+        included = manifest.get("included_sources", [])
+
+        print(
+            f"Prepared {company['name']}: "
+            f"{len(included)} included sources"
+        )
+
+    generate_company_brochures(companies, company_contexts, company_manifests)
+
     # Step 5: Shared-budget comparison
     comparison_context, _ = build_context(
         all_sources,
-        output_name="NVIDIA_AMD_comparison",
+        output_name="A_B_comparison",
     )
 
     comparison, comparison_metadata = generate_comparison(
-        comparison_context
+        comparison_context,
+        tuple(company["name"] for company in companies.values()),
+        output_prefix="A_B",
     )
 
     if not comparison or not comparison.strip():
@@ -650,7 +678,7 @@ def run_full_workflow():
 
     # Step 6: Baseline experiment
     baseline = generate_baseline(
-        "NVIDIA",
+        companies["A"]["name"],
         "A",
         "customers",
         company_contexts["A"],
@@ -666,6 +694,32 @@ def run_full_workflow():
     print("\nFull workflow completed successfully.")
 
 
+def regenerate_saved_brochures():
+    """Build fresh, matching contexts and manifests from saved source records."""
+    contexts = {}
+    manifests = {}
+    for company_id in COMPANIES:
+        contexts[company_id], manifests[company_id] = build_context(
+            load_saved_sources(company_id), output_name=company_id,
+        )
+        if not manifests[company_id]["included_sources"]:
+            raise ValueError(f"Company {company_id} has no usable saved sources.")
+
+    generate_company_brochures(COMPANIES, contexts, manifests)
+
+
+def run_in_output_directory(workflow, *args):
+    run_dir = PROJECT_ROOT / "runs" / str(uuid4())
+    run_dir.mkdir(parents=True)
+    print(f"Saving this run to {run_dir}")
+    previous_dir = Path.cwd()
+    try:
+        os.chdir(run_dir)
+        workflow(*args)
+    finally:
+        os.chdir(previous_dir)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Advanced Company Brochure Generator"
@@ -673,12 +727,21 @@ def main():
 
     parser.add_argument(
         "--mode",
-        choices=["inspect", "verify", "full"],
+        choices=["inspect", "verify", "brochures", "full"],
         default="inspect",
         help="Workflow execution mode",
     )
 
+    for flag in ("--company-a", "--company-b"):
+        parser.add_argument(
+            flag, nargs=2, metavar=("NAME", "URL"),
+            help="Company name and website URL for full mode",
+        )
+
     args = parser.parse_args()
+
+    if args.mode != "full" and (args.company_a or args.company_b):
+        parser.error("Company options require --mode full.")
 
     if args.mode == "inspect":
         inspect_saved_workflow()
@@ -689,14 +752,37 @@ def main():
         if not passed:
             raise SystemExit(1)
 
+    elif args.mode == "brochures":
+        run_in_output_directory(regenerate_saved_brochures)
+
     elif args.mode == "full":
+        if not args.company_a or not args.company_b:
+            parser.error("Full mode requires --company-a NAME URL and --company-b NAME URL.")
+
+        companies = {}
+        for company_id, values in (("A", args.company_a), ("B", args.company_b)):
+            name, url = (value.strip() for value in values)
+            try:
+                parsed = urlsplit(url)
+                valid_url = (
+                    parsed.scheme in {"http", "https"}
+                    and bool(parsed.hostname)
+                    and parsed.username is None
+                    and not any(character.isspace() for character in url)
+                )
+                parsed.port  # Validate an explicitly supplied port.
+            except ValueError:
+                valid_url = False
+            if not name or not valid_url:
+                parser.error(f"Company {company_id} requires a name and a valid HTTP(S) URL.")
+            companies[company_id] = {"name": name, "url": url}
+
+        if companies["A"]["name"].casefold() == companies["B"]["name"].casefold():
+            parser.error("Enter two distinct company names.")
+
         print(
             "\nWARNING: Full mode will make live website "
             "and Gemini API requests."
-        )
-        print(
-            "It may replace existing saved source/context "
-            "files and create new generated outputs."
         )
 
         confirmation = input(
@@ -707,7 +793,7 @@ def main():
             print("Full workflow cancelled.")
             return
 
-        run_full_workflow()
+        run_in_output_directory(run_full_workflow, companies)
 
 
 if __name__ == "__main__":

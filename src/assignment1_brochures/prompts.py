@@ -159,7 +159,8 @@ COMPARISON_DIMENSIONS = [
 ]
 
 
-def build_comparison_prompt(context):
+def build_comparison_prompt(context, companies=("NVIDIA", "AMD")):
+    company_a, company_b = companies
 
     dimensions = "\n".join(
         f"{i + 1}. {dimension}"
@@ -169,14 +170,14 @@ def build_comparison_prompt(context):
     prompt = f"""
 You are an expert business analyst.
 
-Your task is to compare NVIDIA and AMD using only
+Your task is to compare {company_a} and {company_b} using only
 the supplied company source material.
 
 Write the comparison in Hebrew.
 
 COMPANIES:
-- NVIDIA
-- AMD
+- {company_a} (sources A1–A4)
+- {company_b} (sources B1–B4)
 
 COMPARISON DIMENSIONS:
 {dimensions}
@@ -185,8 +186,8 @@ INSTRUCTIONS:
 
 1. Create a Markdown comparison table with three columns:
    - Dimension
-   - NVIDIA
-   - AMD
+   - {company_a}
+   - {company_b}
 
 2. Compare both companies across all four predefined
    dimensions.

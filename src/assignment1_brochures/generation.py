@@ -47,7 +47,7 @@ def _generate_text(prompt):
     return content, _get_token_usage(response)
 
 
-def generate_brochure(company_name, context, audience, company_id=None):
+def generate_brochure(company_name, context, audience, company_id=None, *, context_paths=()):
     """Generate, save, and log a company brochure."""
     run_id = str(uuid4())
     start_time = time.perf_counter()
@@ -105,11 +105,11 @@ def generate_brochure(company_name, context, audience, company_id=None):
             model=MODEL,
             duration_seconds=duration,
             status=status,
-            input_paths=(
-                [str(prompt_path)]
-                if prompt_path is not None and prompt_path.is_file()
-                else []
-            ),
+            input_paths=[
+                str(path)
+                for path in (prompt_path, *context_paths)
+                if path is not None and path.is_file()
+            ],
             output_paths=(
                 [str(output_path)]
                 if output_path is not None and output_path.is_file()
@@ -122,8 +122,8 @@ def generate_brochure(company_name, context, audience, company_id=None):
         )
 
 
-def generate_comparison(context):
-    """Generate and log the NVIDIA vs AMD comparison."""
+def generate_comparison(context, companies=("NVIDIA", "AMD"), *, output_prefix="NVIDIA_AMD"):
+    """Generate and log the company comparison."""
     run_id = str(uuid4())
     start_time = time.perf_counter()
 
@@ -135,10 +135,10 @@ def generate_comparison(context):
     status = "failure"
     error_message = None
 
-    print("Generating NVIDIA vs AMD comparison...")
+    print(f"Generating {' vs '.join(companies)} comparison...")
 
     try:
-        prompt = build_comparison_prompt(context)
+        prompt = build_comparison_prompt(context, companies)
 
         prompt_dir = Path("data/prompts")
         prompt_dir.mkdir(parents=True, exist_ok=True)
@@ -152,7 +152,7 @@ def generate_comparison(context):
         output_dir = Path("outputs/comparisons")
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        output_path = output_dir / f"NVIDIA_AMD_{run_id}.md"
+        output_path = output_dir / f"{output_prefix}_{run_id}.md"
         output_path.write_text(comparison, encoding="utf-8")
 
         status = "success"
@@ -178,7 +178,7 @@ def generate_comparison(context):
         metadata = {
             "run_id": run_id,
             "action": "company_comparison",
-            "companies": ["NVIDIA", "AMD"],
+            "companies": list(companies),
             "model": MODEL,
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "duration_seconds": duration,
@@ -197,7 +197,7 @@ def generate_comparison(context):
         log_operation(
             run_id=run_id,
             operation="company_comparison",
-            company="NVIDIA, AMD",
+            company=", ".join(companies),
             model=MODEL,
             duration_seconds=duration,
             status=status,
