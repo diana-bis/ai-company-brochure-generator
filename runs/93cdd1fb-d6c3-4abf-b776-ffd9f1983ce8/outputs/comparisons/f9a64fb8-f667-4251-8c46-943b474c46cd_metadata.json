@@ -1,0 +1,20 @@
+{
+    "run_id": "f9a64fb8-f667-4251-8c46-943b474c46cd",
+    "action": "company_comparison",
+    "companies": [
+        "NVIDIA",
+        "AMD"
+    ],
+    "model": "gemini-3.1-flash-lite",
+    "timestamp": "2026-11-21T07:19:00.902689+00:00",
+    "duration_seconds": 4.64,
+    "status": "success",
+    "prompt_path": "data\\prompts\\comparison_f9a64fb8-f667-4251-8c46-943b474c46cd.txt",
+    "output_path": "outputs\\comparisons\\A_B_f9a64fb8-f667-4251-8c46-943b474c46cd.md",
+    "error": null,
+    "token_usage": {
+        "completion_tokens": 1196,
+        "prompt_tokens": 2974,
+        "total_tokens": 4170
+    }
+}

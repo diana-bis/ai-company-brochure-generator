@@ -1,0 +1,13 @@
+{
+    "output_name": "B",
+    "text_budget": 12000,
+    "characters_used": 8290,
+    "included_sources": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+    ],
+    "truncated_sources": [],
+    "omitted_sources": []
+}

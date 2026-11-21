@@ -1,0 +1,154 @@
+## Source A1
+Title: World Leader in Artificial Intelligence Computing | NVIDIA
+URL: https://www.nvidia.com/
+Content:
+Artificial Intelligence Computing Leadership from NVIDIA
+HPC
+NVIDIA Introduces Nemotron for Science to Accelerate Agentic Discovery
+New open dataset and post-training recipes will help researchers adapt Nemotron 3.5 Super VL for agents in life sciences and chemistry.
+Read Press Release
+Data Center
+NVIDIA Expands Vera Platform to Accelerate Scientific Discovery
+NVIDIA’s Vera CPU rack-scale platform pairs its first custom data center CPU with top HPC networking, turbocharging scientific modeling, simulation, and agentic science.
+Read Announcement
+Forschungszentrum Jülich / Sascha Kreklau
+HPC
+NVIDIA, IBM, Fermilab Announce Codesign Quantum Computing Platform
+New TCBP-JOBS decoder in CUDA-Q™ QEC delivers up to a 13,000x speedup for quantum error-correction research.
+Read Announcement
+Networking
+Lambda Boosts AI Factory Resiliency, Efficiency With NVIDIA Photonics
+The world’s first large-scale co-packaged optics deployment, running real workloads at scale today.
+Read Blog
+Data Center
+NVIDIA Sweeps MLPerf Training and Endpoints
+The NVIDIA Vera Rubin platform showcases fastest time to train and 10x throughput per watt on agentic inference workloads.
+Learn More
+Automotive
+Alpamayo 2 Edge Is Here
+Explore adaptive AV reasoning, optimize Alpamayo 2 Edge for NVIDIA DRIVE AGX Thor, and use AlpaJudge to evaluate and improve driving explanations.
+Read the Blog
+HPC
+NVIDIA Introduces Nemotron for Science to Accelerate Agentic Discovery
+Data Center
+NVIDIA Expands Vera Platform to Accelerate Scientific Discovery
+HPC
+NVIDIA, IBM, Fermilab Announce Codesign Quantum Computing Platform
+Networking
+Lambda Boosts AI Factory Resiliency, Efficiency With NVIDIA Photonics
+Data Center
+NVIDIA Sweeps MLPerf Training and Endpoints
+Automotive
+Alpamayo 2 Edge Is Here
+HPC
+Data Center
+HPC
+Networking
+Data Center
+Automotive
+GTC Berlin 2026 Registration Is Now Open
+Join developers, researchers, and industry leaders on October 20–22 to explore the
+
+## Source A2
+Title: Jobs at NVIDIA | NVIDIA Careers
+URL: https://www.nvidia.com/en-eu/about-nvidia/careers/
+Content:
+Like No Place
+You’ve Ever Worked
+Find Your Next Job
+Follow Your Passion. Lead a Movement.
+You’ll solve some of the world’s hardest problems and discover never-before-seen ways to improve the quality of life for people everywhere. From healthcare to robots. Self-driving cars to blockbuster movies. And a growing list of new opportunities every single day. Watch this video for a glimpse at why NVIDIA is like no place you've ever worked.
+Explore Life at NVIDIA
+We’re an eclectic, passionate group of professionals dedicated to solving some of the world’s biggest challenges. The project is the boss—even for our CEO. We thrive on seamless collaboration and shared success while embracing inclusivity and individuality. Everyone contributes. Everyone belongs.
+Explore Now
+Help Us Transform Entire Industries
+The breakthroughs we’re making at NVIDIA are impacting businesses everywhere, helping them work faster, better, and smarter. Join our team. Make an impact.
+AI
+Help companies of all sizes embrace industry-changing technologies like RAPIDS to analyze massive amounts of data to make better, faster business decisions.
+Learn More
+Auto
+Give cars the ability to see, think, learn, and navigate a nearly infinite range of driving scenarios for faster, safer autonomous driving.
+Learn More
+Hardware
+Join our hardware team for the opportunity to have real impact in a dynamic, technology-focused company. Our product lines range from consumer graphics to self-driving cars to the growing field of AI. We’ve built an exceptional team of people from around the globe whose mission is to push the frontiers of what’s possible and to define the platform for the future of computing.
+Learn More
+Meet More Teams
+Ready to Join Us?
+Get Started Here
+How We Hire
+NVIDIA is proud to be an equal opportunity employer and committed to fostering an inclusive environment. NVIDIA is committed to offering reasonable accommodations, upon request, to job applicants with disabilities.
+
+## Source A3
+Title: About Us: Company Leadership, History, Jobs, News  | NVIDIA
+URL: https://www.nvidia.com/en-eu/about-nvidia/
+Content:
+Nvidia - NVIDIA Corp Brochure
+Our Body of Work
+NVIDIA pioneered accelerated computing to tackle challenges no one else can solve. Our work in AI and digital twins is transforming the world's largest industries and profoundly impacting society.
+Explore
+The iPhone Moment for AI
+Accelerated computing and AI have fully arrived. The acceleration of deep learning ignited the Big Bang of AI.
+Now, generative AI is a new computing platform, like the PC, internet, and mobile-cloud.
+Credit: Runway AI, Adobe, Tabnine, WPP
+NVIDIA is the Engine of AI
+NVIDIA engineers the most advanced chips, systems, and software for the AI factories of the future. We build new AI services that help companies create their own AI factories.
+Reinventing Modern Graphics
+NVIDIA RTX™ taps into AI and ray tracing to deliver a whole new level of realism in graphics. This year, we introduced the next breakthrough in AI-powered graphics: DLSS 3.
+Connecting Our Physical and Digital Worlds
+Omniverse, our platform for industrial digitalization, enables industries grounded in physical processes to become software-defined and connect large, highly skilled teams.
+Driving Automotive Growth
+Generative AI and digitalization are reshaping the $3 trillion automotive industry, from design and engineering to manufacturing, autonomous driving, and customer experience. NVIDIA is at the epicenter of this industrial transformation.
+Credit: WPP, McLaren; Koenigsegg; BMW; Rimac
+Supercharging Healthcare
+With NVIDIA, healthcare institutions can harness the power of AI and high-performance computing to define the future of medicine.
+Accelerated Computing Is Sustainable Computing
+Data centers are already about 1-2% of global electricity consumption and growing. This is not sustainable for operating budgets and our planet. Acceleration is the best way to reclaim power and achieve sustainability and net zero.
+Like No Place You’ve Ever Worked
+“NVIDIA is reshaping the fut
+
+## Source A4
+Title: Data Centers Built for Advanced AI Reasoning | NVIDIA
+URL: https://www.nvidia.com/en-eu/data-center/
+Content:
+Data Center Solutions
+Data Centers for the Era of AI Reasoning
+Accelerate and deploy full-stack infrastructure purpose-built for high-performance data centers.
+Browse NVIDIA Marketplace
+Products
+|
+Resources
+|
+NVIDIA Data Platform
+Overview
+Solutions
+Workloads
+Use Cases
+Resources
+Next Steps
+Overview
+Solutions
+Workloads
+Use Cases
+Resources
+Next Steps
+Overview
+Solutions
+Workloads
+Use Cases
+Resources
+Next Steps
+Browse NVIDIA Marketplace
+Overview
+The NVIDIA Unified Platform
+From AI to data analytics to high-performance computing (HPC) to rendering, data centers are key to solving some of the world’s most important challenges. The end-to-end
+NVIDIA accelerated computing
+platform, integrated across hardware and software, gives enterprises the blueprint to a robust, secure infrastructure that supports develop-to-deploy implementations across all modern workloads.
+NVIDIA Launches Space Computing to Boost AI Into Orbit
+Engineered for size-, weight-, and power-constrained environments, NVIDIA Space-1 Vera Rubin Module, IGX Thor™, and Jetson Orin™ compute modules deliver data-center-class performance and edge AI inferencing for orbital data centers, geospatial intelligence, and autonomous spacecraft. AetherFlux, Kepler Communications, Planet Labs, Sophia Space, and Starcloud are using NVIDIA accelerated computing platforms to power next-generation space missions across orbital and ground environments.
+Read Announcement
+NVIDIA in the Data Center—Orchestrated to Perfection
+See the modern data center, orchestrated to perfection by the NVIDIA accelerated computing platform and brought to life in NVIDIA Omniverse™.
+Watch Video
+Solutions for Every Data Center
+Full-Stack Data Center Infrastructure
+Reimagine the data center for the age of AI with the NVIDIA accelerated computing platform, built on full-stack, next-generation GPU, CPU, and networking architectures. With leading-edge technologies that span performance, security, opera

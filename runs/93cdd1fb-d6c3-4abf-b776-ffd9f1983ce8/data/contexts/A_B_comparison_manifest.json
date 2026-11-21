@@ -1,0 +1,66 @@
+{
+    "output_name": "A_B_comparison",
+    "text_budget": 12000,
+    "characters_used": 11996,
+    "included_sources": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+    ],
+    "truncated_sources": [
+        {
+            "source_id": "A1",
+            "original_characters": 1939,
+            "included_characters": 1383,
+            "reason": "Complete context budget allocation"
+        },
+        {
+            "source_id": "A2",
+            "original_characters": 1966,
+            "included_characters": 1383,
+            "reason": "Complete context budget allocation"
+        },
+        {
+            "source_id": "A3",
+            "original_characters": 1939,
+            "included_characters": 1383,
+            "reason": "Complete context budget allocation"
+        },
+        {
+            "source_id": "A4",
+            "original_characters": 1945,
+            "included_characters": 1383,
+            "reason": "Complete context budget allocation"
+        },
+        {
+            "source_id": "B1",
+            "original_characters": 1969,
+            "included_characters": 1383,
+            "reason": "Complete context budget allocation"
+        },
+        {
+            "source_id": "B2",
+            "original_characters": 1947,
+            "included_characters": 1383,
+            "reason": "Complete context budget allocation"
+        },
+        {
+            "source_id": "B3",
+            "original_characters": 1989,
+            "included_characters": 1383,
+            "reason": "Complete context budget allocation"
+        },
+        {
+            "source_id": "B4",
+            "original_characters": 1962,
+            "included_characters": 1383,
+            "reason": "Complete context budget allocation"
+        }
+    ],
+    "omitted_sources": []
+}

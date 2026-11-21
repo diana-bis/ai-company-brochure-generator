@@ -1,0 +1,17 @@
+{
+    "run_id": "c6fb6a12-5f9e-4edd-9333-5f0af4130ccc",
+    "company": "NVIDIA",
+    "audience": "customers",
+    "model": "gemini-3.1-flash-lite",
+    "timestamp": "2026-11-21T07:18:47.244285+00:00",
+    "duration_seconds": 4.44,
+    "status": "completed",
+    "output_path": "outputs\\streaming\\A_customers_c6fb6a12-5f9e-4edd-9333-5f0af4130ccc.md",
+    "characters": 1915,
+    "error": null,
+    "token_usage": {
+        "completion_tokens": 886,
+        "prompt_tokens": 2100,
+        "total_tokens": 2986
+    }
+}

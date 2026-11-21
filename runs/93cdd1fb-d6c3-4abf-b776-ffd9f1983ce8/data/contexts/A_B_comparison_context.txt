@@ -1,0 +1,237 @@
+## Source A1
+Title: World Leader in Artificial Intelligence Computing | NVIDIA
+URL: https://www.nvidia.com/
+Content:
+Artificial Intelligence Computing Leadership from NVIDIA
+HPC
+NVIDIA Introduces Nemotron for Science to Accelerate Agentic Discovery
+New open dataset and post-training recipes will help researchers adapt Nemotron 3.5 Super VL for agents in life sciences and chemistry.
+Read Press Release
+Data Center
+NVIDIA Expands Vera Platform to Accelerate Scientific Discovery
+NVIDIA’s Vera CPU rack-scale platform pairs its first custom data center CPU with top HPC networking, turbocharging scientific modeling, simulation, and agentic science.
+Read Announcement
+Forschungszentrum Jülich / Sascha Kreklau
+HPC
+NVIDIA, IBM, Fermilab Announce Codesign Quantum Computing Platform
+New TCBP-JOBS decoder in CUDA-Q™ QEC delivers up to a 13,000x speedup for quantum error-correction research.
+Read Announcement
+Networking
+Lambda Boosts AI Factory Resiliency, Efficiency With NVIDIA Photonics
+The world’s first large-scale co-packaged optics deployment, running real workloads at scale today.
+Read Blog
+Data Center
+NVIDIA Sweeps MLPerf Training and Endpoints
+The NVIDIA Vera Rubin platform showcases fastest time to train and 10x throughput per watt on agentic inference workloads.
+Learn More
+Automotive
+Alpamayo 2 Edge Is Here
+Explore adaptive AV reasoning, optimize Alpamayo 2 Edge for NVIDIA DRIVE AGX Thor, and use AlpaJudge to evaluate and improve driving explanations.
+Read the Blog
+HPC
+NVIDIA Intr
+
+## Source A2
+Title: Jobs at NVIDIA | NVIDIA Careers
+URL: https://www.nvidia.com/en-eu/about-nvidia/careers/
+Content:
+Like No Place
+You’ve Ever Worked
+Find Your Next Job
+Follow Your Passion. Lead a Movement.
+You’ll solve some of the world’s hardest problems and discover never-before-seen ways to improve the quality of life for people everywhere. From healthcare to robots. Self-driving cars to blockbuster movies. And a growing list of new opportunities every single day. Watch this video for a glimpse at why NVIDIA is like no place you've ever worked.
+Explore Life at NVIDIA
+We’re an eclectic, passionate group of professionals dedicated to solving some of the world’s biggest challenges. The project is the boss—even for our CEO. We thrive on seamless collaboration and shared success while embracing inclusivity and individuality. Everyone contributes. Everyone belongs.
+Explore Now
+Help Us Transform Entire Industries
+The breakthroughs we’re making at NVIDIA are impacting businesses everywhere, helping them work faster, better, and smarter. Join our team. Make an impact.
+AI
+Help companies of all sizes embrace industry-changing technologies like RAPIDS to analyze massive amounts of data to make better, faster business decisions.
+Learn More
+Auto
+Give cars the ability to see, think, learn, and navigate a nearly infinite range of driving scenarios for faster, safer autonomous driving.
+Learn More
+Hardware
+Join our hardware team for the opportunity to have real impact in a dynamic, technol
+
+## Source A3
+Title: About Us: Company Leadership, History, Jobs, News  | NVIDIA
+URL: https://www.nvidia.com/en-eu/about-nvidia/
+Content:
+Nvidia - NVIDIA Corp Brochure
+Our Body of Work
+NVIDIA pioneered accelerated computing to tackle challenges no one else can solve. Our work in AI and digital twins is transforming the world's largest industries and profoundly impacting society.
+Explore
+The iPhone Moment for AI
+Accelerated computing and AI have fully arrived. The acceleration of deep learning ignited the Big Bang of AI.
+Now, generative AI is a new computing platform, like the PC, internet, and mobile-cloud.
+Credit: Runway AI, Adobe, Tabnine, WPP
+NVIDIA is the Engine of AI
+NVIDIA engineers the most advanced chips, systems, and software for the AI factories of the future. We build new AI services that help companies create their own AI factories.
+Reinventing Modern Graphics
+NVIDIA RTX™ taps into AI and ray tracing to deliver a whole new level of realism in graphics. This year, we introduced the next breakthrough in AI-powered graphics: DLSS 3.
+Connecting Our Physical and Digital Worlds
+Omniverse, our platform for industrial digitalization, enables industries grounded in physical processes to become software-defined and connect large, highly skilled teams.
+Driving Automotive Growth
+Generative AI and digitalization are reshaping the $3 trillion automotive industry, from design and engineering to manufacturing, autonomous driving, and customer experience. NVIDIA is at the epicenter of this industrial 
+
+## Source A4
+Title: Data Centers Built for Advanced AI Reasoning | NVIDIA
+URL: https://www.nvidia.com/en-eu/data-center/
+Content:
+Data Center Solutions
+Data Centers for the Era of AI Reasoning
+Accelerate and deploy full-stack infrastructure purpose-built for high-performance data centers.
+Browse NVIDIA Marketplace
+Products
+|
+Resources
+|
+NVIDIA Data Platform
+Overview
+Solutions
+Workloads
+Use Cases
+Resources
+Next Steps
+Overview
+Solutions
+Workloads
+Use Cases
+Resources
+Next Steps
+Overview
+Solutions
+Workloads
+Use Cases
+Resources
+Next Steps
+Browse NVIDIA Marketplace
+Overview
+The NVIDIA Unified Platform
+From AI to data analytics to high-performance computing (HPC) to rendering, data centers are key to solving some of the world’s most important challenges. The end-to-end
+NVIDIA accelerated computing
+platform, integrated across hardware and software, gives enterprises the blueprint to a robust, secure infrastructure that supports develop-to-deploy implementations across all modern workloads.
+NVIDIA Launches Space Computing to Boost AI Into Orbit
+Engineered for size-, weight-, and power-constrained environments, NVIDIA Space-1 Vera Rubin Module, IGX Thor™, and Jetson Orin™ compute modules deliver data-center-class performance and edge AI inferencing for orbital data centers, geospatial intelligence, and autonomous spacecraft. AetherFlux, Kepler Communications, Planet Labs, Sophia Space, and Starcloud are using NVIDIA accelerated computing platforms to power next-generation space missions across orbi
+
+## Source B1
+Title: AMD ׀ together we advance_AI
+URL: https://www.amd.com/en.html
+Content:
+Skip to main content
+AMD Website Accessibility Statement
+Your Trusted Partner for Advancing AI
+Your Trusted Partner for
+Advancing AI
+Confidently build your AI business outcomes
+Explore AI Solutions
+AMD Completes Acquisition of Taalas to Advance AI Inference Innovation
+Acquisition of specialized AI inference silicon pioneer strengthens the AMD full-stack AI portfolio and long-term inference roadmap.
+Read News Release
+AMD Completes Acquisition of World Labs
+The acquisition brings together leading AI model researchers and AMD engineers to shape the next generation of AMD hardware, software and systems for the open AI ecosystem.
+Read News Release
+AMD Showcases 6th Gen AMD EPYC Processors
+AMD announces the general availability of the 6th Gen AMD EPYC server SP7 processors, based on the new “Zen 6” architecture.
+Read News Release
+AI Solutions
+Why AMD
+AI is reshaping every business function. AMD helps you move from ambition to outcomes with a trusted, open, and flexible compute foundation.
+Broadest Portfolio of AI Solutions
+AMD is the only AI partner offering CPU, GPU, and adaptive computing solutions, enabling optimized AI deployments tailored to your needs.
+Open Ecosystem Approach
+A commitment to open standards and co-innovation fosters flexibility and investment protection, giving you the confidence to deploy AI end-to-end.
+Proven Leadership in Innovation
+AMD deliv
+
+## Source B2
+Title: AMD Careers | Engineering and AI Jobs in Technology
+URL: https://www.amd.com/en/corporate/careers.html
+Content:
+Skip to main content
+AMD Website Accessibility Statement
+AMD Careers
+Join us. Together, we’ll advance your career – and the world.
+View All Jobs
+Advance your career. Advance the world.
+Accomplish the most meaningful work of your career and change lives for the better with the company leading technology and AI advancement.
+Note:
+Our recruiters never use personal emails, ask for fees, make offers via text, charge for resume reviews, or request personal ID documents during the application process. Learn how to protect yourself from job scams and report suspicious activity
+here
+.
+Career Areas
+Whether you’re designing next-gen processors, enabling AI breakthroughs, or creating go-to-market plans, every role at AMD contributes to something bigger — technology that moves the world forward. Search our open roles and discover where you’ll make your mark.
+Search Jobs from Greater China
+Engineering
+Search Jobs from Greater China
+Marketing & Sales
+Search Jobs from Greater China
+Corporate Functions
+Student Programs
+Explore internship, co-op, and early career opportunities
+Start Your Career at the Center of AI Innovation
+Our student programs put you at the epicenter of the AI ecosystem, where you’ll work alongside experts and industry pioneers. You'll do important work, learn new skills, and build your career — with support from AMD.
+Explore Student Programs
+Life at AMD
+Toge
+
+## Source B3
+Title: About AMD
+URL: https://www.amd.com/en/corporate.html
+Content:
+Skip to main content
+AMD Website Accessibility Statement
+About AMD
+Our Company
+AMD is the high performance and adaptive computing leader, powering the products and services that help solve the world’s most important challenges. Our technologies advance the future of the data center, embedded, gaming and PC markets.
+Founded in 1969 as a Silicon Valley start-up, the AMD journey began with dozens of employees who were passionate about creating leading-edge semiconductor products. AMD has grown into a global company setting the standard for modern computing, with many important industry firsts and major technological achievements along the way.
+Our Vision
+High performance and adaptive computing is transforming our lives.
+Our Mission
+Build great products that accelerate next-generation computing experiences.
+To achieve real progress, it takes ground-breaking innovation and human ingenuity working together to create something exceptional.
+Learn More
+Advancing Corporate Responsibility­
+Corporate responsibility is integral to how we operate as a global business, valued partner and trusted employer. From advancing high-performance and energy-efficient computing to cultivating an innovative, inclusive workforce, we are committed to driving the computing industry forward responsibly.
+Learn More
+Building AMD and the Culture with Progressive Leadership
+Our executive team co
+
+## Source B4
+Title: AMD AI Solutions | AI Infrastructure
+URL: https://www.amd.com/en/solutions/ai.html
+Content:
+Skip to main content
+AMD Website Accessibility Statement
+Confidently Build Your AI Business Outcomes
+AI Solutions Start with AMD
+AI is reshaping every business function. AMD helps you move from ambition to outcomes with a trusted, open, and flexible compute foundation built for real-world AI.
+The Challenge Ahead
+AI Is Essential.
+The Path Is Complex.
+AI expectations are rising fast – and the pressure is specific: commit to an AI strategy that is ambitious, credible, and future-ready, while managing unknown costs, governance requirements, sustainability limits, and infrastructure maturity gaps. As AI agents take on more autonomous roles across your business, your infrastructure must handle concurrent, multi-model workloads at speed without spiraling budgets. AMD helps leaders solve the key challenges to AI adoption and optimization.
+Will this platform scale as AI evolves?
+How do we avoid lock-in?
+Can we manage cost, power, and complexity?
+How do we move from pilots to production?
+Why AMD
+Build AI That Performs at Scale
+– Without the Trade-Offs
+Broadest Portfolio – Agentic AI Ready
+Run Every AI Workload on the Right Engine
+Run AI on the right engine with
+AMD EPYC
+server CPUs,
+AMD Instinct
+GPUs,
+AMD RyzenAI
+processors,
+adaptive computing
+,
+networking
+,
+ROCm software
+, and
+full-stack
+solutions. AMD is optimized for efficient inference scaling, agentic workflow frami

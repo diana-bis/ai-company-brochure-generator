@@ -1,0 +1,19 @@
+{
+  "links": [
+    {
+      "type": "careers",
+      "url": "https://www.nvidia.com/en-eu/about-nvidia/careers/",
+      "reason": "Provides essential information for potential job candidates regarding open roles, company culture, and career opportunities at NVIDIA."
+    },
+    {
+      "type": "company",
+      "url": "https://www.nvidia.com/en-eu/about-nvidia/",
+      "reason": "Offers an overview of the company's mission, values, and history, which is valuable for both prospective customers and job seekers looking to understand the company's vision."
+    },
+    {
+      "type": "products",
+      "url": "https://www.nvidia.com/en-eu/data-center/",
+      "reason": "Showcases the enterprise-level hardware and software solutions available to customers, providing a comprehensive look at the company's technical infrastructure and product offerings."
+    }
+  ]
+}

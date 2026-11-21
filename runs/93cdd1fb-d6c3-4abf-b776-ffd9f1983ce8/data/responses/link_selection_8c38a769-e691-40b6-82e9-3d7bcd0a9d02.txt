@@ -1,0 +1,19 @@
+{
+    "links": [
+        {
+            "type": "careers",
+            "url": "https://www.amd.com/en/corporate/careers.html",
+            "reason": "Provides essential information for job candidates regarding current openings, company culture, and career development at AMD."
+        },
+        {
+            "type": "corporate information",
+            "url": "https://www.amd.com/en/corporate.html",
+            "reason": "Offers an overview of the company's business model, leadership, and mission, which is valuable for both potential customers researching the company and candidates evaluating a potential employer."
+        },
+        {
+            "type": "solutions",
+            "url": "https://www.amd.com/en/solutions/ai.html",
+            "reason": "Highlights the company's strategic focus on AI technology, helping potential customers understand how AMD's products apply to modern business and technical challenges."
+        }
+    ]
+}
