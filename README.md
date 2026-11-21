@@ -127,6 +127,13 @@ assignment1-brochures/
 │   ├── baseline/
 │   └── reports/
 │
+├── runs/
+│   └── <run-id>/
+│       ├── data/
+│       ├── logs/
+│       │   └── run_log.jsonl
+│       └── outputs/
+│
 ├── src/
 │   └── assignment1_brochures/
 │       ├── __init__.py
@@ -593,6 +600,8 @@ GEMINI_API_KEY=your_api_key_here
 GEMINI_MODEL=gemini-3.1-flash-lite
 ```
 
+You can also use `GOOGLE_API_KEY` in your `.env`. If both names are set, the application uses `GEMINI_API_KEY`.
+
 Never commit the `.env` file or expose API keys.
 
 The `.env.example` file provides the configuration template.
@@ -650,7 +659,15 @@ Supply a name and HTTP(S) website URL for each company. Quote names that contain
 
 Each live run saves its sources, prompts, contexts, outputs, and log in a new `runs/<run-id>/` directory. The inspect and verify commands review the original saved NVIDIA and AMD deliverables.
 
-The application requests explicit confirmation before starting the full workflow.
+Type `RUN FULL` when prompted. A successful run ends with `Full workflow completed successfully.`
+
+### Recorded Python Run
+
+The NVIDIA and AMD test run completed end to end. Its [run log](runs/93cdd1fb-d6c3-4abf-b776-ffd9f1983ce8/logs/run_log.jsonl) records **10 operations, 8 Gemini API calls, and 10 website requests**. Two of the operations were source-fetching steps and used no Gemini calls.
+
+The [run folder](runs/93cdd1fb-d6c3-4abf-b776-ffd9f1983ce8) contains the saved sources, prompts, contexts and manifests, four brochures, a company comparison, a baseline brochure, and the log. The NVIDIA customer brochure displayed progressively in the terminal. All four brochures passed the word-count and citation-ID checks, and each brochure's log entry links to its exact prompt, context, manifest, and output.
+
+The submitted comparison and the analyses in the summary report refer to the original notebook-generated files. The Python run documents the end-to-end test separately.
 
 ---
 
